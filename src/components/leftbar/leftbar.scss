@@ -1,0 +1,63 @@
+@import "../../style.scss";
+.leftBar{
+    flex:2;
+    position: sticky;
+    top:70px;
+    height: calc(100vh - 70px);
+    overflow:scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+    // background-color: rgb(4, 110, 74);
+    .container{
+        padding: 20px;
+        hr{
+            margin: 20px 0px;
+            border: none;
+            height: 1px;
+            background-color: lightgray;
+        }
+        .menu{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                span{
+                    font-style: 14px;
+                }
+            }
+            .item{
+                display: flex;
+                align-items: center;
+                gap:20px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+
+                }
+                span{
+                    font-style: 14px;
+
+                }
+
+            }
+        }
+
+    
+    }
+    
+
+}
